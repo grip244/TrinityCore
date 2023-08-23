@@ -37,13 +37,13 @@ namespace WorldPackets
 
             WorldPacket const* Write() override;
 
-            int32 MythicPlusDisplaySeasonID = 0;
-            int32 MythicPlusMilestoneSeasonID = 0;
-            int32 PreviousArenaSeason = 0;
-            int32 CurrentArenaSeason = 0;
-            int32 PvpSeasonID = 0;
-            int32 ConquestWeeklyProgressCurrencyID = 0;
-            bool WeeklyRewardChestsEnabled = false;
+            int32 MythicPlusDisplaySeasonID = 21;
+            int32 MythicPlusMilestoneSeasonID = 97;
+            int32 PreviousArenaSeason = 34;
+            int32 CurrentArenaSeason = 35;
+            int32 PvpSeasonID = 29;
+            int32 ConquestWeeklyProgressCurrencyID = 1891;
+            bool WeeklyRewardChestsEnabled = true;
         };
 
         class AreaSpiritHealerQuery final : public ClientPacket
