@@ -97,12 +97,12 @@ namespace WorldPackets
 
             struct RafSystemFeatureInfo
             {
-                bool Enabled = false;
-                bool RecruitingEnabled = false;
-                uint32 MaxRecruits = 0;
-                uint32 MaxRecruitMonths = 0;
-                uint32 MaxRecruitmentUses = 0;
-                uint32 DaysInCycle = 0;
+                bool Enabled = true;
+                bool RecruitingEnabled = true;
+                uint32 MaxRecruits = 10;
+                uint32 MaxRecruitMonths = 12;
+                uint32 MaxRecruitmentUses = 4;
+                uint32 DaysInCycle = 30;
                 uint32 Unknown1007 = 0;
             };
 
@@ -158,7 +158,7 @@ namespace WorldPackets
             bool LFGListCustomRequiresAuthenticator  = false;
             bool AddonsDisabled                      = false;
             bool Unused1000                          = false;
-            bool ContentTrackingEnabled              = false;
+            bool ContentTrackingEnabled              = true;
             bool IsSellAllJunkEnabled                = false;
 
             SocialQueueConfig QuickJoinConfig;
@@ -182,7 +182,7 @@ namespace WorldPackets
 
             bool BpayStoreAvailable                  = false; // NYI
             bool BpayStoreDisabledByParentalControls = false; // NYI
-            bool CharUndeleteEnabled                 = false;
+            bool CharUndeleteEnabled                 = true;
             bool BpayStoreEnabled                    = false; // NYI
             bool CommerceSystemEnabled               = false; // NYI
             bool Unk14                               = false; // NYI
@@ -209,8 +209,8 @@ namespace WorldPackets
             uint32 BpayStoreProductDeliveryDelay     = 0;     // NYI
             int32 ActiveCharacterUpgradeBoostType    = 0;     // NYI
             int32 ActiveClassTrialBoostType          = 0;     // NYI
-            int32 MinimumExpansionLevel              = 0;
-            int32 MaximumExpansionLevel              = 0;
+            int32 MinimumExpansionLevel              = 8;
+            int32 MaximumExpansionLevel              = 9;
             uint32 KioskSessionMinutes               = 0;
             int32 ActiveSeason                       = 0;     // Currently active Classic season
             std::vector<GameRuleValuePair> GameRuleValues;
